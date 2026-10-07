@@ -27,7 +27,15 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-To publish it with GitHub Pages, go to **Settings → Pages**, set the source to deploy from a branch and pick the root folder.
+## Put it online
+
+GitHub Pages hosts it for free, but on the free plan the repository must be public.
+
+1. **Settings → General → Danger Zone → Change visibility → Public.**
+2. **Settings → Pages → Build and deployment**: set Source to *Deploy from a branch*. Pick the branch that has the game (`main` once it's merged) and the `/ (root)` folder, then save.
+3. After a minute or two the game is live at **https://kzzzzzy1.github.io/Video-game/**.
+
+The link preview tags in `index.html` (`og:url` and `og:image`) point at that address. If you host the game somewhere else, update them so WhatsApp and X show `og-image.png` when people share the link.
 
 ## Files
 
